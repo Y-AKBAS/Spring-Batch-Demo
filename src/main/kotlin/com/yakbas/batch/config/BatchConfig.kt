@@ -32,6 +32,7 @@ class BatchConfig(
 
     @Bean
     fun userItemReader(): RepositoryItemReader<User> {
+
         return RepositoryItemReaderBuilder<User>()
             .name("user item reader")
             .pageSize(1000)

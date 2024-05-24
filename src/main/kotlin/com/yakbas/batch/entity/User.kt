@@ -8,7 +8,7 @@ data class User(
     @Id val id: Long?,
     val firstName: String,
     val lastName: String,
-    val email: String,
+    var email: String,
     val fullName: String? // later on we will set this column with batching. Therefore, it is null now.
 ) {
     companion object {
